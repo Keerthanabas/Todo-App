@@ -18,7 +18,7 @@ const Todo = () => {
         value={Add}
         onChange={(e) => setAdd(e.target.value)}
       ></input>
-      <button onClick={() => onLogin()}>Add Item </button>
+      <button onClick={() => onLogin()}> Add Item </button>
       <ol>
         {todo.map((item) => (
           <li>
