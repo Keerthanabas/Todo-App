@@ -13,19 +13,23 @@ const Todo = () => {
   };
   return (
     <div>
+      
       <input
         type="text"
         value={Add}
         onChange={(e) => setAdd(e.target.value)}
       ></input>
       <button onClick={() => onLogin()}> Add Item </button>
+      
       <ol>
+      
         {todo.map((item) => (
           <li>
             {item} <button onClick={() => deleteItem(item)}>Delete</button>
           </li>
-        ))}
+          ))}
       </ol>
+      
     </div>
   );
 };
