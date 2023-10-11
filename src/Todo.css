@@ -1,0 +1,49 @@
+*{
+    text-align: center;
+    color: rgb(247, 245, 245);
+    box-decoration-break: slice;
+    background-color: black;
+}
+ol{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-inline: 20px;
+}
+input{
+  border-color: antiquewhite;
+  margin-inline: 20px;
+  
+}
+input:hover{
+    background-color: rgb(241, 241, 246);
+    box-shadow: 0 0 12px rgb(43, 213, 225);
+    color: black;
+}
+button{
+    background-color: rgb(43, 213, 225);
+    color: rgb(14, 14, 14);
+    padding-inline: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+button:hover {
+    color: black;
+    box-shadow: 0 0 12px #15e4d2;
+    
+}
+li{
+    text-align: center;
+    box-sizing: content-box;
+    margin: 20px;
+}
+form{
+    margin-top:10px;
+    margin-bottom:10px ;
+    margin-left: 600px;
+    margin-right: 500px;
+}
+
+   
+        
+

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Todo.css";
+
 
 const Todo = () => {
   const [todo, setTodo] = useState(["Milk", "Tea", "Coffee", "Bread"]);
@@ -13,7 +15,6 @@ const Todo = () => {
   };
   return (
     <div>
-      
       <input
         type="text"
         value={Add}
@@ -21,16 +22,25 @@ const Todo = () => {
       ></input>
       <button onClick={() => onLogin()}> Add Item </button>
       
+      <form>
+        
+        <table>
+          <tr>
       <ol>
-      
+        <td>
         {todo.map((item) => (
           <li>
             {item} <button onClick={() => deleteItem(item)}>Delete</button>
           </li>
           ))}
-      </ol>
+         </td> 
+      </ol> 
+      </tr>
+      </table>
       
-    </div>
+      </form>
+      
+      </div>
   );
 };
 export default Todo;
