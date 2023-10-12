@@ -3,7 +3,7 @@ import "./Todo.css";
 
 
 const Todo = () => {
-  const [todo, setTodo] = useState(["Milk", "Tea", "Coffee", "Bread"]);
+  const [todo, setTodo] = useState(["Milk", "Tea", "Coffee"]);
   const [Add, setAdd] = useState("");
   const onLogin = () => {
     todo.push(Add);
@@ -13,6 +13,7 @@ const Todo = () => {
     const deletedItem = todo.filter((value) => value !== item);
     setTodo(deletedItem);
   };
+  console.log(todo,"Todo")
   return (
     <div>
       <input
@@ -22,23 +23,23 @@ const Todo = () => {
       ></input>
       <button onClick={() => onLogin()}> Add Item </button>
       
-      <form>
+      
         
-        <table>
-          <tr>
+        
+          
       <ol>
-        <td>
-        {todo.map((item) => (
-          <li>
+        
+        {todo.map((item,key) => (
+          <li key={key}>
             {item} <button onClick={() => deleteItem(item)}>Delete</button>
           </li>
           ))}
-         </td> 
+         
       </ol> 
-      </tr>
-      </table>
       
-      </form>
+      
+      
+      
       
       </div>
   );
