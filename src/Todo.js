@@ -5,15 +5,17 @@ import "./Todo.css";
 const Todo = () => {
   const [todo, setTodo] = useState(["Milk", "Tea", "Coffee"]);
   const [Add, setAdd] = useState("");
-  const onLogin = () => {
-    todo.push(Add);
-    setTodo(todo);
+  const onLogin = (e) => {
+    e.preventDefault()
+    console.log([...todo])
+    let todo1=[...todo,Add]
+    setTodo(todo1);
   };
   const deleteItem = (item) => {
     const deletedItem = todo.filter((value) => value !== item);
     setTodo(deletedItem);
   };
-  console.log(todo,"Todo")
+  
   return (
     <div>
       <input
@@ -21,7 +23,7 @@ const Todo = () => {
         value={Add}
         onChange={(e) => setAdd(e.target.value)}
       ></input>
-      <button onClick={() => onLogin()}> Add Item </button>
+      <button onClick={(e) => onLogin(e)}> Add Item </button>
       
       
         
