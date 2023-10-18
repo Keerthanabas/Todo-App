@@ -3,7 +3,7 @@ import "./Todo.css";
 
 
 const Todo = () => {
-  const [todo, setTodo] = useState(["Milk", "Tea", "Coffee"]);
+  const [todo, setTodo] = useState(["Milk", "Tea", "Coffee","Bread"]);
   const [Add, setAdd] = useState("");
   const onLogin = (e) => {
     e.preventDefault()
