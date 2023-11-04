@@ -27,7 +27,7 @@ const Todo = () => {
       <ol>
         
         {todo.map((item,key) => (
-          <li key={key} className="li">
+          <li key={key} >
             {item} <button onClick={() => deleteItem(item)}>Delete</button>
           </li>
           ))}
