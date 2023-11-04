@@ -24,15 +24,10 @@ const Todo = () => {
         onChange={(e) => setAdd(e.target.value)}
       ></input>
       <button onClick={(e) => onLogin(e)}> Add Item </button>
-      
-      
-        
-        
-          
       <ol>
         
         {todo.map((item,key) => (
-          <li key={key}>
+          <li key={key} className="li">
             {item} <button onClick={() => deleteItem(item)}>Delete</button>
           </li>
           ))}

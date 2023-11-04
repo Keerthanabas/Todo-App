@@ -32,7 +32,7 @@ button:hover {
     box-shadow: 0 0 12px #15e4d2;
     
 }
-li{
+.li{
     text-align: center;
     box-sizing: content-box;
     margin: 20px;
