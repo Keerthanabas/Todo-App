@@ -3,13 +3,14 @@
     color: rgb(247, 245, 245);
     box-decoration-break: slice;
     background-color: rgb(36, 34, 34);
+    
 }
-ol{
+/* ol{
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
     margin-inline: 20px;
-}
+} */
 input{
   border-color: antiquewhite;
   margin-inline: 20px;
@@ -32,16 +33,16 @@ button:hover {
     box-shadow: 0 0 12px #15e4d2;
     
 }
-li{
-    text-align: center;
-    box-sizing: content-box;
-    margin: 20px;
-}
+
 form{
     margin-top:10px;
     margin-bottom:10px ;
     margin-left: 600px;
     margin-right: 500px;
+}
+li{
+    margin: 20px;
+    
 }
 
    
